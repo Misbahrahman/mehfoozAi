@@ -169,13 +169,15 @@ export function UseCasesSection() {
         </div>
 
         <div className="relative aspect-[9/16] md:aspect-square w-full max-w-xs mx-auto md:max-w-none">
-          <Image
-          src=""
-            // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-08%20at%2011.32.44%E2%80%AFAM-Dtvxh5c1TyLZj0ttYwhJe45YxmaR0Y.png"
-            alt="Mobile app interface showing security features"
-            fill
-            className="object-contain"
-          />
+        <video
+            className="object-cover w-full h-full"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/useCases.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Shield } from "lucide-react";
+import { Shield, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -37,14 +37,15 @@ export function HeroSection() {
 
       <div className="flex-1 relative w-full max-w-md mx-auto md:max-w-none">
         <div className="aspect-square rounded-3xl overflow-hidden">
-          <Image
-            src=""
-            // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-08%20at%2011.21.06%E2%80%AFAM-g0dsIEbLMTnWyhz4yFZGH9WEUFCIF6.png"
-            alt="Surveillance technology visualization"
-            fill
-            className="object-cover"
-            priority
-          />
+          <video
+            className="object-cover w-full h-full"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/mainVid.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>

@@ -61,12 +61,15 @@ export function AboutSection() {
       </div>
 
       <div className="aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden">
-        <img
-          // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-08%20at%2011.29.28%E2%80%AFAM-Pr449XCZRIALbqZzSTipkOcKvOVOJM.png"
-          src=""
-          alt="AI-powered surveillance demo showing person detection"
-          className="w-full h-full object-cover"
-        />
+      <video
+            className="object-cover w-full h-full"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/mainVid.mp4" type="video/mp4" />
+          </video>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
